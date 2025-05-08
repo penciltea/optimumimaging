@@ -1,4 +1,5 @@
-import { Grid, Box, Typography, Container, List, ListItem } from "@mui/material";
+import { Grid, Box, Typography, Container, Button, List, ListItem } from "@mui/material";
+import PhoneIcon from '@mui/icons-material/Phone';
 import HeroBanner from '../components/HeroBanner';
 import Reviews from "../components/Reviews";
 import Location from "../components/Location";
@@ -6,7 +7,24 @@ import Location from "../components/Location";
 export default function Home(){
     return (
         <>
-            <HeroBanner />
+            <HeroBanner>
+                <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 600 }}>
+                    Safe, Comfortable Open MRI
+                </Typography>
+                <Typography variant="h6" component="p" sx={{ mb: 4 }}>
+                    Providing high-quality imaging in a patient-focused environment since 2014.
+                </Typography>
+                <Button 
+                    variant="contained" 
+                    color="primary" 
+                    size="large"
+                    component="a"
+                    href="tel:3052209500"
+                    startIcon={<PhoneIcon />}
+                >
+                    Schedule an Appointment
+                </Button>
+            </HeroBanner>
 
             <Box sx={{backgroundColor: '#eff9ff', py: 4, my: 6 }}>
                 <Container maxWidth="lg">
