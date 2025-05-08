@@ -1,10 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
 import App from './App.tsx'
 
-let theme = createTheme();
-theme = responsiveFontSizes(theme);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

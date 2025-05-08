@@ -15,10 +15,7 @@ const ReviewCard = ({ name, rating, text }: ReviewProps) => (
       <Typography variant="body1" sx={{ mb: 2, textAlign: "center" }}>
         “{text}”
       </Typography>
-      <Typography
-        variant="body2"
-        sx={{ fontStyle: "italic", textAlign: "center", color: "text.secondary" }}
-      >
+      <Typography variant="body2" sx={{ fontStyle: "italic", textAlign: "center", color: "text.secondary" }} >
         — {name}
       </Typography>
     </CardContent>

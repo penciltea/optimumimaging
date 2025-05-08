@@ -1,82 +1,120 @@
-import { Grid, Stack, Box, Typography } from "@mui/material";
-import ReviewCard from "../components/ReviewCard";
+import { Grid, Box, Typography, Container, List, ListItem } from "@mui/material";
+import HeroBanner from '../components/HeroBanner';
+import Reviews from "../components/Reviews";
+import Location from "../components/Location";
 
 export default function Home(){
     return (
         <>
-            <Box className="hero">
-                <Typography variant="h1">Optimum Imaging MRI</Typography>
-                <Typography variant="body2">Compassionate care. Clear results.</Typography>
-            </Box>
+            <HeroBanner />
+
+            <Box sx={{backgroundColor: '#eff9ff', py: 4, my: 6 }}>
+                <Container maxWidth="lg">
+                    <Typography variant="h3" component="h2" align="center" gutterBottom>
+                        Experience Comfort and Clarity in Medical Imaging
+                    </Typography>
+                    <Typography variant="body1" component="p" gutterBottom>
+                        Since 2014, Optimum Imaging MRI has proudly served the Miami community with exceptional diagnostic imaging in a comfortable, patient-first setting. 
+                        Our open MRI technology provides a more relaxed alternative to traditional machines—ideal for children, seniors, and anyone with claustrophobia or anxiety.
+                    </Typography>
+                    <Typography variant="body1" component="p" gutterBottom>
+                        We combine state-of-the-art equipment, including open MRI and advanced digital X-ray systems, with a compassionate staff focused on your comfort and care. 
+                        Every scan is performed with precision and attention to detail, ensuring fast, accurate results for you and your healthcare provider.
+                    </Typography>
+                    <Typography variant="body1" component="p">
+                        Whether you're here for a routine scan or specialized diagnostic imaging, Optimum Imaging is committed to making your visit smooth, efficient, and stress-free.
+                    </Typography>
+                </Container>
+            </Box> 
 
             <Box>
-                <Typography variant="h2">Experience Comfort and Clarity in Medical Imaging</Typography>
-                <Typography variant="body2">Since 2014, Optimum Imaging MRI has provided patients with high-quality imaging in a compassionate and patient-friendly environment.</Typography>
+                <Container maxWidth="lg" >
+                    <Box sx={{ my: 4 }}>
+                        <Typography variant="h3" align="center" gutterBottom>About Our Services</Typography>
+                        <Grid container spacing={4} alignItems="center">
+                            <Grid size={{xs: 12, md: 7}}>
+                                <Typography variant="body1" sx={{mb: 3}}>
+                                    At Optimum Imaging MRI, we offer state-of-the-art diagnostic imaging with a strong focus on patient comfort, clear communication, and fast, accurate results. Our facility is equipped with advanced technology designed to deliver detailed imaging in a relaxed, supportive environment — because we believe your comfort is key to better outcomes.
+                                </Typography>
+                                <Typography variant="body1" sx={{mb: 3}}>
+                                    We specialize in high-resolution MRI scans, using open MRI systems that reduce anxiety and discomfort, especially for patients who experience claustrophobia. Our same-day appointment availability ensures you get the answers you need quickly, without long wait times.
+                                </Typography>
+                                <Typography variant="body1" sx={{mb: 3}}>
+                                    Every scan is reviewed by our team of board-certified radiologists, who work closely with your referring physician to provide comprehensive reports and personalized insights. From your first call to your results, our goal is to provide care that is efficient, empathetic, and tailored to your needs.
+                                </Typography>
+                            </Grid>
+                            <Grid size={{xs: 12, md: 5}}>
+                                <Box
+                                    component="img"
+                                    src="/images/mri.jpg"
+                                    alt="Open MRI Machine"
+                                    sx={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        borderRadius: 2,
+                                        boxShadow: 2,
+                                    }}
+                                />
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </Container>
             </Box>
 
-            <Box>
-                <Box>IMAGE GOES HERE</Box>
-                <Typography variant="body2">At Optimum Imaging MRI, we specialize in open MRI technology that puts your comfort first. Whether you're here for an MRI or a digital X-ray, our modern equipment ensures accurate results with a gentle touch.</Typography>
+            <Box sx={{backgroundColor: '#eff9ff', py: 6, my: 6 }}>
+                <Container maxWidth="lg">
+                    <Typography variant="h3" component="h3" align="center">Why Choose Us</Typography>
+                    <Grid container justifyItems="center" alignItems="center">
+                        <Grid size={{xs: 12, md: 4}}>
+                            <Box
+                            component="img"
+                            src="/images/iac.png"
+                            alt="IAC MRI Accredited Facility"
+                            sx={{
+                                maxWidth: '100%',
+                                height: 'auto',
+                                display: 'block',
+                                mx: { xs: 'auto', md: 0 }
+                            }}
+                            />
+                        </Grid>
+
+                        <Grid size={{xs: 12, md: 8}}>
+                            <List>
+                                <ListItem>
+                                    <Typography variant="body1">
+                                        <strong>Open MRI Scanners:</strong> Ideal for patients with anxiety or claustrophobia, without compromising image quality.
+                                    </Typography>
+                                </ListItem>
+                                <ListItem>
+                                    <Typography variant="body1">
+                                        <strong>Top-Tier X-ray Machines:</strong> Fast, reliable, and precise imaging for accurate diagnoses.
+                                    </Typography>
+                                </ListItem>
+                                <ListItem>
+                                    <Typography variant="body1">
+                                        <strong>Experienced Staff:</strong> Compassionate professionals committed to your care and comfort.
+                                    </Typography>
+                                </ListItem>
+                                <ListItem>
+                                    <Typography variant="body1">
+                                        <strong>Same-Day Appointments:</strong> Timely service to fit your schedule and provide prompt results.
+                                    </Typography>
+                                </ListItem>
+                                <ListItem>
+                                    <Typography variant="body1">
+                                        <strong>Accredited Facility:</strong> Recognized by the IAC for meeting the highest standards in MRI imaging.
+                                    </Typography>
+                                </ListItem>
+                            </List>
+                        </Grid>
+                    </Grid>
+                </Container>
             </Box>
 
-            <Box>
-                <Typography variant="h3">Why Choose Us</Typography>
-                <ul>
-                    <li><strong>Open MRI Scanners: </strong>Perfect for patients with anxiety or claustrophobia, without sacrificing image quality.</li>
-                    <li><strong>Top-Tier X-ray Machines: </strong>Fast, reliable, and precise imaging.</li>
-                    <li><strong>Experienced Staff: </strong>Compassionate professionals committed to your care.</li>
-                </ul>
-            </Box>
+            <Reviews />
 
-            <Box>
-                <Typography variant="h4">Customer Reviews</Typography>
-                <Stack
-                    direction={{ xs: 'column', sm: 'row' }}
-                    spacing={{ xs: 1, sm: 2, md: 4 }}
-                >
-                    <ReviewCard 
-                        name="Carlos E." 
-                        rating={5} 
-                        text="Wow! I recommend Optimum Imaging enough! The entire staff was incredibly friendly and attentive ,from the moment i walked in until I left.They explain everything ,they make me feel heard and understood. The office is clean and modern, and I nevera to wait long for the appointment. A truly positive experience and all around.Thank You for treating me so special."  
-                    />
-                    
-                    <ReviewCard 
-                        name="Orlando P." 
-                        rating={5} 
-                        text="Optimum imaging is very pleasant. The staff goes above and beyond to make sure you are comfortable during any procedure. They are very knowledgeable and explain into detail the procedures. If you are looking for an imaging center this place is it." 
-                    />
-
-                    <ReviewCard 
-                        name="Adria G." 
-                        rating={5} 
-                        text="Choosing Optimum Imaging was a great experience. It gave me piece of mind knowing it was going to be an open MRI. Thank you all for the professionalism especially to Randy who kindly helped me. They gave me a CD the same day I attended the facility. I highly recommend them! Thank you Yusleidy, Camila, Yasser & Randy for the great service." 
-                    />
-                </Stack>
-            </Box>
-
-            <Box sx={{ py: 6, px: 2 }}>
-                <Typography variant="h5" align="center" gutterBottom>
-                    Visit Our Location
-                </Typography>
-                <Box
-                    sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    mt: 3,
-                    }}
-                >
-                    <Box
-                    component="iframe"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.7935926823825!2d-80.35456272460014!3d25.74433857736285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b8c77f44d2e9%3A0x9a6c4846b9db1bcb!2sOptimum%20Imaging!5e0!3m2!1sen!2sus!4v1746638185706!5m2!1sen!2sus"
-                    width="100%"
-                    height="1050"
-                    style={{ border: 0, maxWidth: '1000px' }}
-                    loading="lazy"
-                    allowFullScreen
-                    referrerPolicy="no-referrer-when-downgrade"
-                    />
-                </Box>
-            </Box>
+            <Location />
         </>
     )
 }
