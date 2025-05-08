@@ -16,11 +16,11 @@ export default function Footer(){
                 borderTopColor: theme.palette.primary.main
             }}
         >
-            <Grid size={4}>
+            <Grid size={{xs: 6, md: 4}}>
                 <Typography variant="body2">&copy; {(new Date().getFullYear())} Optimum Imaging MRI.</Typography>
             </Grid>
 
-            <Grid size={8} textAlign="right">
+            <Grid size={{xs: 6, md: 8}} textAlign="right">
                 <Typography variant="body2">
                     <Link component={RouterLink} to="/privacy" color="inherit" sx={{mx: 1}} >Privacy</Link> |
                     <Link component={RouterLink} to="/terms" color="inherit" sx={{mx: 1}} >Terms of Service</Link>
