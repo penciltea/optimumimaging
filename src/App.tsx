@@ -7,7 +7,6 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import './styles/reset.css'
 import './styles/App.css'
-import { Container } from '@mui/material';
 
 function App() {
   return (
