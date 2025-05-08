@@ -12,7 +12,7 @@ export default function Home(){
                     Safe, Comfortable Open MRI
                 </Typography>
                 <Typography variant="h6" component="p" sx={{ mb: 4 }}>
-                    Providing high-quality imaging in a patient-focused environment since 2014.
+                    Providing high-quality imaging in a patient-focused environment since 2010.
                 </Typography>
                 <Button 
                     variant="contained" 
@@ -32,7 +32,7 @@ export default function Home(){
                         Experience Comfort and Clarity in Medical Imaging
                     </Typography>
                     <Typography variant="body1" component="p" gutterBottom>
-                        Since 2014, Optimum Imaging MRI has proudly served the Miami community with exceptional diagnostic imaging in a comfortable, patient-first setting. 
+                        Since 2010, Optimum Imaging MRI has proudly served the Miami community with exceptional diagnostic imaging in a comfortable, patient-first setting. 
                         Our open MRI technology provides a more relaxed alternative to traditional machines—ideal for children, seniors, and anyone with claustrophobia or anxiety.
                     </Typography>
                     <Typography variant="body1" component="p" gutterBottom>
@@ -82,8 +82,8 @@ export default function Home(){
             <Box sx={{backgroundColor: '#eff9ff', py: 6, my: 6 }}>
                 <Container maxWidth="lg">
                     <Typography variant="h3" component="h3" align="center">Why Choose Us</Typography>
-                    <Grid container justifyItems="center" alignItems="center">
-                        <Grid size={{xs: 12, md: 4}}>
+                    <Grid container justifyItems="center" alignItems="center" spacing={2}>
+                        <Grid size={{xs: 12, md: 3}}>
                             <Box
                             component="img"
                             src="/images/iac.png"
@@ -97,31 +97,31 @@ export default function Home(){
                             />
                         </Grid>
 
-                        <Grid size={{xs: 12, md: 8}}>
+                        <Grid size={{xs: 12, md: 9}}>
                             <List>
                                 <ListItem>
                                     <Typography variant="body1">
-                                        <strong>Open MRI Scanners:</strong> Ideal for patients with anxiety or claustrophobia, without compromising image quality.
+                                        <strong>Open MRI scanners:</strong> Ideal for patients with anxiety or claustrophobia, without compromising image quality.
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
                                     <Typography variant="body1">
-                                        <strong>Top-Tier X-ray Machines:</strong> Fast, reliable, and precise imaging for accurate diagnoses.
+                                        <strong>Digital x-ray machine:</strong> Fast, reliable, and precise imaging for accurate diagnoses.
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
                                     <Typography variant="body1">
-                                        <strong>Experienced Staff:</strong> Compassionate professionals committed to your care and comfort.
+                                        <strong>Experienced staff:</strong> Compassionate professionals committed to your care and comfort.
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
                                     <Typography variant="body1">
-                                        <strong>Same-Day Appointments:</strong> Timely service to fit your schedule and provide prompt results.
+                                        <strong>Same-day appointments:</strong> Timely service to fit your schedule and provide prompt results.
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
                                     <Typography variant="body1">
-                                        <strong>Accredited Facility:</strong> Recognized by the IAC for meeting the highest standards in MRI imaging.
+                                        <strong>Accredited facility:</strong> Recognized by the IAC for meeting the highest standards in MRI imaging.
                                     </Typography>
                                 </ListItem>
                             </List>

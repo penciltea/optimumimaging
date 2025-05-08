@@ -12,7 +12,7 @@ export default function About() {
 
       <Container maxWidth="lg" sx={{ my: 4, py: 4 }}>
         <Typography variant="body1" component="p">
-          Founded in 2014, Optimum Imaging MRI was created with a mission: to deliver exceptional diagnostic imaging with a patient-first mindset. For over a decade, we've served the Miami community with the clarity and care they deserve in a relaxed, welcoming environment.
+          Founded in 2010, Optimum Imaging MRI was created with a mission: to deliver exceptional diagnostic imaging with a patient-first mindset. For over a decade, we've served the Miami community with the clarity and care they deserve in a relaxed, welcoming environment.
         </Typography>
 
         <Typography variant="h3" component="h2" align="center" sx={{marginTop: 5, marginBottom: 2}}>
