@@ -89,11 +89,11 @@ export default function Home(){
                             src="/images/iac.png"
                             alt="IAC MRI Accredited Facility"
                             sx={{
-                                maxWidth: '100%',
-                                height: 'auto',
                                 display: 'block',
-                                mx: { xs: 'auto', md: 0 }
-                            }}
+                                mx: { xs: 'auto', md: 0 },
+                                width: { xs: '40%', sm: '40%', md: '100%' },
+                                height: 'auto',
+                              }}
                             />
                         </Grid>
 
