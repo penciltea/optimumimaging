@@ -70,7 +70,7 @@ export default function Privacy() {
         </Typography>
         <Box component="address" sx={{ fontStyle: 'normal', my: 2 }}>
           <Typography variant="body1"><strong>Optimum Imaging MRI</strong></Typography>
-          <Typography variant="body1">2740 SW 97th Ave # 107, Miami, FL 33165</Typography>
+          <Typography variant="body1">2740 SW 97th Ave Suite 107, Miami, FL 33165</Typography>
           <Typography variant="body1">
             <Link href="mailto:info@optimumimaging.com">info@optimumimaging.com</Link>
           </Typography>
