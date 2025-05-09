@@ -127,7 +127,7 @@ export default function Terms() {
           5. Contact Information
         </Typography>
         <Box component="address" sx={{ fontStyle: 'normal', mb: 2 }}>
-          <Typography variant="body1"><strong>Optimum Imaging MRI</strong></Typography>
+          <Typography variant="body1"><strong>Optimum Imaging</strong></Typography>
           <Typography variant="body1">2740 SW 97th Ave Suite 107, Miami, FL 33165</Typography>
           <Typography variant="body1">
             <Link href="mailto:info@optimumimaging.com">info@optimumimaging.com</Link>

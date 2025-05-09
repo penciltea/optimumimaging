@@ -15,7 +15,7 @@ export default function Footer(){
                 borderTopColor: theme.palette.primary.main
             }}
         >
-            <Typography variant="body2">&copy; {(new Date().getFullYear())} Optimum Imaging MRI</Typography>
+            <Typography variant="body2">&copy; {(new Date().getFullYear())} Optimum Imaging LLC</Typography>
             <Typography variant="body2" sx={{my: 1}}>
                 <Link component={RouterLink} to="/privacy" color="inherit" sx={{marginRight: 1}} >Privacy</Link> |
                 <Link component={RouterLink} to="/terms" color="inherit" sx={{marginLeft: 1}} >Terms of Service</Link>
