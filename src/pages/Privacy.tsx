@@ -14,10 +14,10 @@ export default function Privacy() {
         <Typography variant="h3" component="h2" gutterBottom>
           Privacy and Communications Disclaimer
         </Typography>
-        <Typography  variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           Optimum Imaging MRI is committed to safeguarding the privacy and security of your personal information in compliance with applicable federal and state privacy laws, including those governing healthcare communications.
         </Typography>
-        <Typography  variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           We collect only one piece of personally identifiable information: your <strong>telephone number</strong>. This information is used solely for the following purposes:
         </Typography>
         <List sx={{ listStyleType: 'disc', pl: 4 }}>
@@ -28,29 +28,29 @@ export default function Privacy() {
             To provide information related to the address and location of your scheduled imaging services.
           </ListItem>
         </List>
-        <Typography  variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           Your personal information is <strong>not shared</strong>, disclosed, sold, or otherwise distributed to any third parties or affiliates.
         </Typography>
-        <Typography  variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           Additionally, <strong>SMS consent obtained from patients is not shared with third parties or affiliates for marketing or promotional purposes.</strong> Your contact information is used exclusively to facilitate communication related to your scheduled appointments and services provided by Optimum Imaging MRI.
         </Typography>
-        <Typography  variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           By providing your phone number, you consent to receive appointment-related text messages or calls. Standard message and data rates may apply. You may withdraw your consent at any time by contacting us directly or following opt-out instructions included in the communication.
         </Typography>
 
         <Typography variant="h3" component="h3" gutterBottom sx={{ mt: 4 }}>
           Privacy Policy
         </Typography>
-        <Typography  variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           Optimum Imaging MRI implements reasonable administrative, technical, and physical safeguards designed to protect the personal information we collect from unauthorized access, use, or disclosure.
         </Typography>
-        <Typography  variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           We limit the collection and use of personal data to what is necessary to deliver services effectively. While our website may contain links to external websites, we are not responsible for the privacy practices or content of those third-party sites.
         </Typography>
-        <Typography  variant="body1" component="p">
-          We do not use cookies or tracking technologies to collect personal data through our website. No personally identifiable information is gathered unless it is voluntarily provided by the user (e.g., via phone number submission).
+        <Typography variant="body1" component="p" gutterBottom>
+          We do not use cookies or tracking technologies to collect personal data through our website. No personally identifiable information is gathered unless it is voluntarily provided by the user (e.g., via phone number submission). Mobile Opt-in, SMS consent, and Phone Numbers collected for SMS communication purposes will not be shared with third parties and affiliates for marketing purposes.
         </Typography>
-        <Typography  variant="body1" component="p">Patients have the right to:</Typography>
+        <Typography variant="body1" component="p" gutterBottom>Patients have the right to:</Typography>
         <List sx={{ listStyleType: 'disc', pl: 4 }}>
           <ListItem sx={{ display: 'list-item' }}>
             Know what personal information is being collected;
@@ -65,7 +65,7 @@ export default function Privacy() {
             Withdraw consent to communications at any time.
           </ListItem>
         </List>
-        <Typography  variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           If you have any questions or concerns regarding this Privacy Policy or our use of your personal information, please contact us at:
         </Typography>
         <Box component="address" sx={{ fontStyle: 'normal', my: 2 }}>
@@ -78,7 +78,7 @@ export default function Privacy() {
             <Link href="tel:+13052209500">(305) 220-9500</Link>
           </Typography>
         </Box>
-        <Typography variant="body1" component="p">
+        <Typography variant="body1" component="p" gutterBottom>
           This policy is subject to change without prior notice. Any updates will be posted on this page with an updated revision date.
         </Typography>
       </Container>

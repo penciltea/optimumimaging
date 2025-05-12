@@ -66,12 +66,6 @@ export default function Terms() {
           <ListItem sx={{ display: 'list-item' }}>
             Providing verbal consent during an in-person or phone conversation
           </ListItem>
-          <ListItem sx={{ display: 'list-item' }}>
-            Submitting an online form via our website
-          </ListItem>
-          <ListItem sx={{ display: 'list-item' }}>
-            Filling out a paper intake or consent form
-          </ListItem>
         </List>
 
         <Typography variant="subtitle1" gutterBottom>
